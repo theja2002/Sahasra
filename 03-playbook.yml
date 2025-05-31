@@ -1,0 +1,5 @@
+- name: ansible modules are easy
+  hosts: frontend
+  tasks: 
+  - name: what tasks to perform
+    ansible.builtin.ping:
