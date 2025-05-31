@@ -1,0 +1,11 @@
+- name: tejas details
+  hosts: local
+  connection: local
+  vars:
+   name: Teja
+   comapny: tcs
+   gym name: rocks
+  tasks:
+  - name: working in company
+    ansible.builtin.debug:
+     msg: "Hello {{name}}, company {{company}}, gym name is {{gym name}}"
