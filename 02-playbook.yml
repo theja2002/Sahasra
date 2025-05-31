@@ -1,0 +1,6 @@
+- name: tejas friend is arjun
+  hosts: Backend
+  tasks: 
+  - name: backend target
+    ansible.builtin.ping:
+
