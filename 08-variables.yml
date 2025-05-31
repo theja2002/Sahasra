@@ -2,10 +2,9 @@
   hosts: local
   connection: local
   vars:
-   Name: Teja
    Comapny: Tcs
    Gym name: Rocks
   tasks:
   - name: working in company
     ansible.builtin.debug:
-     msg: "Hello {{name}}, company {{company}}, gym name is {{gym name}}"
+     msg: "Hello company {{company}}, gym name is {{gym name}}"
