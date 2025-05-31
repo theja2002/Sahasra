@@ -1,4 +1,4 @@
-- name: nginx installation and starting
+- name: nginx installation and run
   hosts: frontend
   become: yes
   tasks: 
@@ -10,7 +10,7 @@
   - name: run nginx
     ansible.builtin.service:
      name: nginx
-     state: starting
+     state: run
      enabled: yes
 
        
