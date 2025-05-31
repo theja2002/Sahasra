@@ -1,0 +1,17 @@
+- name: promting variables #hide username and password
+  hosts: local
+  connection: local
+  vars_prompt:
+  - name: USERNAME
+    prompt: enter the username
+    private: true
+
+  - name: PASSWORD
+    prompt: enter the PASSWORD
+    private: true
+
+  tasks:
+  - name: printing username and password hiding
+    ansible.builtin.debug:
+    msg: "username {{USERNAME}}, password {{PASSWORD}}"  
+   
