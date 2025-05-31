@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-   Comapny: Tcs
+   Company: Tcs
    Gymname: Rocks
   tasks:
   - name: filling details
