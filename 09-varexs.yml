@@ -1,0 +1,11 @@
+- name: devops engineer details
+  hosts: local
+  connection: local
+  vars:
+   Role: Devops engineer
+   Helloours: 3HRS
+   Work: Operations
+  tasks:
+  - name: printing devops roles
+    ansible.builtin.debud:
+    msg: "role {{Role}}, hours {{Hours}}, work {{Operations}}"
