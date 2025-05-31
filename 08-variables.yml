@@ -7,4 +7,4 @@
   tasks:
   - name: working in company
     ansible.builtin.debug:
-     msg: "Hello company {{company}}, gym name is {{gym name}}"
+     msg: "Hello Company {{Company}}, Gym name is {{Gym name}}"
