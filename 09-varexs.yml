@@ -3,7 +3,7 @@
   connection: local
   vars:
    Role: Devops engineer
-   Helloours: 3HRS
+   Hours: 3HRS
    Work: Operations
   tasks:
   - name: printing devops roles
