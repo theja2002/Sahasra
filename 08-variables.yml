@@ -3,8 +3,8 @@
   connection: local
   vars:
    Comapny: Tcs
-   Gym name: Rocks
+   Gymname: Rocks
   tasks:
   - name: working in company
     ansible.builtin.debug:
-     msg: "Hello Company {{Company}}, Gym name is {{Gym name}}"
+     msg: "Hello Company {{Company}}, Gymname is {{Gymname}}"
