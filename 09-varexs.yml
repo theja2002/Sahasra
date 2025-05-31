@@ -2,10 +2,10 @@
   hosts: local
   connection: local
   vars:
-   Role: Devops engineer
-   Hours: 3HRS
-   Work: Operations
+   role: Devops engineer
+   hours: 3hrs
+   work: Operations
   tasks:
   - name: printing devops roles
     ansible.builtin.debug:
-    msg: "role {{Role}}, hours {{Hours}}, work {{Operations}}"
+    msg: "role {{role}}, hours {{hours}}, work {{operations}}"
