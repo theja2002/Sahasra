@@ -4,12 +4,10 @@
   tasks:
   - name: aws devops engineeer one
     ansible.builtin.debug:
-      name: aws devops engineeer one in team one
       msg: "teja from devops team one"
 
   - name: aws devops engineeer one
     ansible.builtin.debug:
-      name: aws devops engineeer one in team two
       msg: "arjun from devops team two"
 
 - name: multple plays second half
@@ -18,10 +16,8 @@
   tasks:
   - name: aws devops engineeer two
     ansible.builtin.debug:
-      name: aws devops engineeer one in team one
       msg: "seetha from devops team one"
 
   - name: aws devops engineeer two
     ansible.builtin.debug:
-      name: aws devops engineeer one in team two
       msg: "pooja from devops team two"      
