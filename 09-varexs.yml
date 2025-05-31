@@ -7,5 +7,5 @@
    Work: Operations
   tasks:
   - name: printing devops roles
-    ansible.builtin.debud:
+    ansible.builtin.debug:
     msg: "role {{Role}}, hours {{Hours}}, work {{Operations}}"
