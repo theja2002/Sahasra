@@ -1,10 +1,8 @@
 - name: devops engineer details
   hosts: local
   connection: local
-  vars:
-   role: Devops engineer
-   hours: 3hrs
-   work: Operations
+  vars_files:
+   - course.yml 
   tasks:
   - name: printing roles
     ansible.builtin.debug:
