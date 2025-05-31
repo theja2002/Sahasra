@@ -5,6 +5,6 @@
    Comapny: Tcs
    Gymname: Rocks
   tasks:
-  - name: working in Company
+  - name: filling details
     ansible.builtin.debug:
      msg: "Hello Company:{{Company}}, Gymname:{{Gymname}}"
