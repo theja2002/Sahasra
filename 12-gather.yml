@@ -6,10 +6,10 @@
     ansible.debug.package:
      name: nginx
      state: present
-    when: ansible_os_family=RedHat
+    when: ansible_os_family == "RedHat"
 
   - name: install nginx if debian
     ansible.debug.package:
      name: nginx
      state: present
-    when: ansible_os_family=debian
+    when: ansible_os_family == "debian"
