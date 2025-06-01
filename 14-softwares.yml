@@ -1,6 +1,6 @@
 - name: install softwares
-  hosts: local
-  connection: local
+  hosts: frontend
+  become: yes
   tasks:
   - name: software installtion
     ansible.builtin.package:
