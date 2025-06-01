@@ -4,4 +4,4 @@
   tasks:
   - name: not defining variables
     ansible.builtin.debug:
-     msg: "Hello, {{ person | default('Sahasra') }}"
+     msg: "Hello, {{ person | default('pooja') }}"
