@@ -1,0 +1,15 @@
+- name: conditions file
+  hosts: local
+  connection: local
+  vars:
+   NUMBER: 42
+  tasks:
+  - name: printing if the number is less than or equal 50
+    ansible.builtin.debug:
+      msg: "print if given {{NUMBER}} is less than 50"
+    when: NUMBER < 50
+
+  - name: printing if the number is greater than 50
+    ansible.builtin.debug:
+      msg: "print if given {{NUMBER}} is greater than 50"    
+    when: NUMBER < 50  
