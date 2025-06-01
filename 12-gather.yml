@@ -1,0 +1,15 @@
+- name: gathering facts
+  hosts: frontend
+  become: yes
+  tasks:
+  - name: install nginx if redhat
+    ansible.debug.package:
+     name: nginx
+     state: present
+    when: ansible_os_family=RedHat
+
+  - name: install nginx if debian
+    ansible.debug.package:
+     name: nginx
+     state: present
+    when: ansible_os_family=debian
